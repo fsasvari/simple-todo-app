@@ -18,13 +18,13 @@
 SET foreign_key_checks = 0;
 
 --
--- Table structure for table `list`
+-- Table structure for table `todo_list`
 --
 
-DROP TABLE IF EXISTS `list`;
+DROP TABLE IF EXISTS `todo_list`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `list` (
+CREATE TABLE `todo_list` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
@@ -39,43 +39,25 @@ CREATE TABLE `list` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `list`
+-- Table structure for table `todo_task`
 --
 
-LOCK TABLES `list` WRITE;
-/*!40000 ALTER TABLE `list` DISABLE KEYS */;
-/*!40000 ALTER TABLE `list` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `task`
---
-
-DROP TABLE IF EXISTS `task`;
+DROP TABLE IF EXISTS `todo_task`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `task` (
+CREATE TABLE `todo_task` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `list_id` int(10) unsigned NOT NULL,
+  `todo_list_id` int(10) unsigned NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `priority` tinyint(3) unsigned NOT NULL DEFAULT '2',
   `deadline_at` datetime NOT NULL,
   `is_finished` tinyint(3) unsigned DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  KEY `task_list_id_idx` (`list_id`),
-  CONSTRAINT `task_list_id` FOREIGN KEY (`list_id`) REFERENCES `list` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `todo_task_todo_list_id_idx` (`todo_list_id`),
+  CONSTRAINT `todo_task_todo_list_id` FOREIGN KEY (`todo_list_id`) REFERENCES `todo_list` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `task`
---
-
-LOCK TABLES `task` WRITE;
-/*!40000 ALTER TABLE `task` DISABLE KEYS */;
-/*!40000 ALTER TABLE `task` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `user`
@@ -90,7 +72,7 @@ CREATE TABLE `user` (
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `firstname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `lastname` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
-  `is_active` tinyint(3) unsigned DEFAULT NULL,
+  `is_activated` tinyint(3) unsigned DEFAULT NULL,
   `last_login_at` datetime DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -98,16 +80,6 @@ CREATE TABLE `user` (
   UNIQUE KEY `password_UNIQUE` (`password`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user`
---
-
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 SET foreign_key_checks = 1;
 
