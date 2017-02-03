@@ -35,4 +35,14 @@ class AuthController extends Controller
 
 
 	}
+
+	public function register()
+	{
+		$this->response->view('register');
+	}
+
+	public function registerPost()
+	{
+		
+	}
 }
