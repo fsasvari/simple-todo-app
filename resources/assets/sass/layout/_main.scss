@@ -1,0 +1,23 @@
+//============================================================================================
+//
+// CONTENT
+//
+//============================================================================================
+
+.wrapper-main {
+    padding-top: 1rem;
+    min-height: 500px;
+}
+
+.wrapper-simple-main {
+    background-color: $brand-primary;
+
+    .container {
+        max-width: $container-simple-max-width;
+    }
+}
+
+.slider-fluid {
+    background-color: $slider-bg;
+    padding: 50px 0;
+}

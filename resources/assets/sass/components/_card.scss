@@ -1,0 +1,23 @@
+//============================================================================================
+//
+// CARD
+//
+//============================================================================================
+
+.card {
+	margin-bottom: $card-spacer-y;
+}
+
+a.card {
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+	}
+}
+
+.card-block, .card-header, .card-footer {
+    padding-bottom: 5px;
+}
+
+.card-default {
+    background-color: #fff;
+}

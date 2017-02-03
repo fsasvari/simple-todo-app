@@ -1,0 +1,70 @@
+//============================================================================================
+//
+// Main CSS file
+//
+//============================================================================================
+
+// config
+@import
+    'config-web',
+    'config-bootstrap';
+
+// bootstrap
+    // Core variables and mixins
+    @import "vendor/twbs/bootstrap/scss/variables";
+    @import "vendor/twbs/bootstrap/scss/mixins";
+
+    // Reset and dependencies
+    @import "vendor/twbs/bootstrap/scss/normalize";
+    @import "vendor/twbs/bootstrap/scss/print";
+
+    // Core CSS
+    @import "vendor/twbs/bootstrap/scss/reboot";
+    @import "vendor/twbs/bootstrap/scss/type";
+    @import "vendor/twbs/bootstrap/scss/images";
+    @import "vendor/twbs/bootstrap/scss/code";
+    @import "vendor/twbs/bootstrap/scss/grid";
+    @import "vendor/twbs/bootstrap/scss/tables";
+    @import "vendor/twbs/bootstrap/scss/forms";
+    @import "vendor/twbs/bootstrap/scss/buttons";
+
+    // Components
+    //@import "vendor/twbs/bootstrap/scss/dropdown";
+    //@import "vendor/twbs/bootstrap/scss/input-group";
+    @import "vendor/twbs/bootstrap/scss/custom-forms";
+    @import "vendor/twbs/bootstrap/scss/card";
+    //@import "vendor/twbs/bootstrap/scss/breadcrumb";
+    @import "vendor/twbs/bootstrap/scss/pagination";
+    @import "vendor/twbs/bootstrap/scss/alert";
+    @import "vendor/twbs/bootstrap/scss/progress";
+    @import "vendor/twbs/bootstrap/scss/media";
+    //@import "vendor/twbs/bootstrap/scss/responsive-embed";
+    //@import "vendor/twbs/bootstrap/scss/nav";
+    //@import "vendor/twbs/bootstrap/scss/close";
+
+    // Utility classes
+    @import "vendor/twbs/bootstrap/scss/utilities";
+
+// Mixins
+@import
+    'mixins/background-size',
+    'mixins/selection';
+
+// Utility classes
+@import
+    'utility/selection',
+    'utility/type';
+
+// layout
+@import
+    'layout/header',
+    'layout/main',
+    'layout/footer';
+
+// components
+@import
+    'components/forms',
+    'components/button',
+    'components/image',
+    'components/card',
+    'components/alert';

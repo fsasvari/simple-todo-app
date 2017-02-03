@@ -1,0 +1,26 @@
+//============================================================================================
+//
+// HEADER
+//
+//============================================================================================
+
+.wrapper-header {
+    background: $primary-color;
+    
+    .wrapper-inner {
+        padding: 15px;
+    }
+    
+    .container {
+        background: $primary-color;
+    }
+    
+    .columns {
+        padding-bottom: 0;
+    }
+    
+    p {
+        color: #fff;
+        margin-bottom: 0;
+    }
+}

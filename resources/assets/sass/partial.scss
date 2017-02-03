@@ -1,0 +1,42 @@
+//============================================================================================
+//
+// Main CSS file
+//
+//============================================================================================
+
+// config
+@import
+    'config-web',
+    'config-bootstrap';
+
+// bootstrap
+    // Core variables and mixins
+    @import "vendor/twbs/bootstrap/scss/variables";
+    @import "vendor/twbs/bootstrap/scss/mixins";
+
+    // Reset and dependencies
+    @import "vendor/twbs/bootstrap/scss/normalize";
+
+    // Core CSS
+    @import "vendor/twbs/bootstrap/scss/reboot";
+    @import "vendor/twbs/bootstrap/scss/type";
+    @import "vendor/twbs/bootstrap/scss/grid";
+
+    // Utility classes
+    @import "vendor/twbs/bootstrap/scss/utilities/clearfix";
+    @import "vendor/twbs/bootstrap/scss/utilities/float";
+    @import "vendor/twbs/bootstrap/scss/utilities/visibility";
+
+// Mixins
+@import
+    'mixins/background-size',
+    'mixins/selection';
+
+// Utility classes
+@import
+    'utility/selection',
+    'utility/type';
+
+// layout
+@import
+    'layout/header';

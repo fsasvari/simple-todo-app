@@ -1,0 +1,170 @@
+//============================================================================================
+//
+// CONFIG
+//
+//============================================================================================
+
+//----------------------------------------------
+// Grid containers
+//----------------------------------------------
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1100px
+);
+
+$container-max-widths: (
+    sm: 748px,
+    md: 972px,
+    lg: 1080px,
+    xl: 1120px
+);
+
+
+//----------------------------------------------
+// Grid columns
+//----------------------------------------------
+
+$grid-columns: 12;
+$grid-gutter-width-base: 20px;
+
+
+//----------------------------------------------
+// Body
+//----------------------------------------------
+
+$body-bg: #fff !default;
+
+
+//----------------------------------------------
+// Typography
+//----------------------------------------------
+
+$font-size-root: 15px;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+$line-height-base: 1.7;
+
+$headings-margin-bottom: 1rem;
+
+$small-font-size: 85%;
+
+
+//----------------------------------------------
+// Components
+//----------------------------------------------
+
+$border-radius: .35rem;
+$border-radius-lg: .45rem;
+$border-radius-sm: .25rem;
+
+
+//----------------------------------------------
+// Cards
+//----------------------------------------------
+
+$card-spacer-x: $grid-gutter-width-base;
+$card-spacer-y: $grid-gutter-width-base;
+$card-border-width: 0;
+$card-bg: inherit;
+
+
+//----------------------------------------------
+// Forms
+//----------------------------------------------
+
+$input-padding-y: .6rem;
+$input-line-height: 1.4;
+
+$input-border-focus: $brand-primary;
+$input-border-focus-secondary: $brand-secondary;
+
+$input-border-radius: .15rem;
+$input-border-radius-lg: .2rem;
+$input-border-radius-sm: .1rem;
+
+$custom-control-gutter: 1.6rem;
+
+$custom-control-checked-indicator-bg: $brand-primary;
+$custom-control-checked-indicator-bg-secondary: $brand-secondary;
+
+$custom-control-focus-indicator-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-primary;
+$custom-control-focus-indicator-box-shadow-secondary: 0 0 0 .075rem #fff, 0 0 0 .2rem $brand-secondary;
+
+$custom-checkbox-indeterminate-bg: $brand-primary;
+$custom-checkbox-indeterminate-bg-secondary: $brand-secondary;
+
+$custom-control-active-indicator-bg: $brand-primary;
+$custom-control-active-indicator-bg-secondary: $brand-secondary;
+$custom-control-indicator-size: 1.2rem;
+
+$custom-file-width: 16rem;
+$custom-file-text: (
+    placeholder: (
+        hr: "Izaberite sliku s računala..."
+    ),
+    button-label: (
+        hr: "Izaberi"
+    )
+);
+
+
+//----------------------------------------------
+// Buttons
+//----------------------------------------------
+
+$btn-padding-y: .6rem;
+$btn-line-height: 1.4;
+
+$btn-border-radius: .15rem;
+$btn-border-radius-lg: .2rem;
+$btn-border-radius-sm: .1rem;
+
+$btn-secondary-color: #fff;
+$btn-secondary-bg: $brand-secondary;
+$btn-secondary-border: $btn-secondary-bg;
+
+
+//----------------------------------------------
+// Breadcrumbs
+//----------------------------------------------
+
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: .2rem;
+
+$breadcrumb-bg: inherit;
+$breadcrumb-divider: "\00BB";
+
+
+//----------------------------------------------
+// Progress
+//----------------------------------------------
+
+$progress-height: 1.7rem;
+
+
+//----------------------------------------------
+// Images
+//----------------------------------------------
+
+$thumbnail-bg: #fff;
+
+
+//----------------------------------------------
+// Alerts
+//----------------------------------------------
+
+$alert-padding-x: 1.35rem;
+$alert-padding-y: 1.25rem;
+
+
+//----------------------------------------------
+// Media
+//----------------------------------------------
+
+$media-alignment-padding-x: $grid-gutter-width-base;

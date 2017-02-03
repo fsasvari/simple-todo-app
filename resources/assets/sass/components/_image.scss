@@ -1,0 +1,17 @@
+//============================================================================================
+//
+// IMAGE
+//
+//============================================================================================
+
+a:hover img.img-thumbnail, a:focus img.img-thumbnail {
+    border-color: $brand-primary;
+}
+
+.img-thumbnail.active {
+    border-color: $brand-primary
+}
+
+.img-fluid-100 {
+    width: 100%;
+}
