@@ -1,33 +1,25 @@
 <?php
 
-$metaTitle = $lang->get('page.login.meta_title');
+$metaTitle = $lang->get('page.todo_list.meta_title');
 $canonical = $lang->get('routes.login');
 
 ?>
 <?php include 'include/_header.php'; ?>
 
 <form method='post' action='<?php echo $canonical; ?>'>
-	<h1><?php echo $lang->get('page.login.heading'); ?></h1>
+	<h1><?php echo $lang->get('page.todo_list.heading'); ?></h1>
 
 	<div class='form-group'>
-		<label for='email' class='label'>E-mail address:</label>
+		<label for='name' class='label'><?php echo $lang->get('form.todo_list.name'); ?>:</label>
 		<div class='input-group'>
-			<input type='text' name='email' id='email' value='<?php echo (isset($post_data['email']) ? $post_data['email'] : ''); ?>' placeholder='E-mail adress' maxlength='80' class='form-input'>
+			<input type='text' name='name' id='name' value='<?php echo (isset($post_data['name']) ? $post_data['name'] : ''); ?>' placeholder='<?php echo $lang->get('form.todo_list.name'); ?>' maxlength='80' class='form-control'>
 			<span class='input-group-addon'><i class='fa fa-envelope'></i></span>
 		</div>
 	</div>
 
 	<div class='form-group'>
-		<label for='password' class='label'>Password:</label>
-		<div class='input-group'>
-			<input type='text' name='password' id='password' value='' placeholder='Password' maxlength='30' class='form-input'>
-			<span class='input-group-addon'><i class='fa fa-lock'></i></span>
-		</div>
-	</div>
-
-	<div class='form-group'>
 		<button type='submit' class='btn btn-primary'>
-			<?php echo $lang->get('form.login.btn'); ?>
+			<?php echo $lang->get('form.todo_list.btn_add'); ?>
 		</button>
 		</div>
 	</div>
