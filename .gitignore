@@ -1,6 +1,8 @@
 /nbproject
 /vendor
 /node_modules
+/public_html/rev-manifest.json
 composer.phar
 composer.lock
 error.log
+.env
