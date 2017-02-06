@@ -41,8 +41,35 @@ class AuthController extends Controller
 		$this->response->view('register');
 	}
 
-	public function registerPost()
+	/**
+	 *
+	 * @param \Slinky\Validation\Validator $validator
+	 * @return void
+	 */
+	public function registerPost(Validator $validator)
 	{
-		
+		$data = [
+			'email' => $this->request->post('email'),
+			'password' => $this->request->post('password'),
+			'password_repeat' => $this->request->post('password_repeat'),
+			'firstname' => $this->request->post('firstname'),
+			'lastname' => $this->request->post('lastname'),
+		];
+
+		$rules = array (
+			'email' => 'required|email|unique:user',
+			'password' => 'required|rangelength:6,30',
+			'password_repeat' => 'required|equalto:password',
+			'first_name' => 'required',
+			'last_name' => 'required',
+		);
+
+		$messages = $this->language->get('alert.user.validator');
+
+		$validator = $validator->make($data, $rules, $messages);
+
+		if ($validator->fails()) {
+
+		}
 	}
 }
