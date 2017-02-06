@@ -9,44 +9,8 @@
     background-color: $brand-primary;
     padding-top: 30px;
     padding-bottom: 15px;
-    
-    a {
-        color: $brand-secondary;
-    }
-}
 
-.wrapper-simple-footer {
-    @extend .wrapper-footer;
-    
-    padding-top: 0;
-    padding-bottom: 5px;
-    
-    .container {
-        max-width: $container-simple-max-width;
-    }
-    
     a {
         color: $brand-secondary;
-    }
-}
-
-.wrapper-bottom {
-    color: #fff;
-    background-color: $bottom-bg;
-    
-    padding-top: 15px;
-    
-    a {
-        color: $brand-secondary;
-    }
-    
-    .list-inline .list-inline-item .btn {
-        color: $brand-primary;
-        width: 4rem;
-        height: 4rem;
-        padding-top: .5rem;
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 2rem;
     }
 }

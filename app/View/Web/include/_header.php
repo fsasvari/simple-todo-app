@@ -8,6 +8,9 @@
 <link href='<?php echo $config->get('app.root'); ?>favicon.ico' rel='icon'>
 <link href='<?php echo $config->get('app.root'); ?>favicon.ico' rel='shortcut icon'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<style>
+	<?php include '/../../Css/partial.min.css'; ?>
+</style>
 <?php echo (isset($meta_include_header) ? $meta_include_header : ''); ?>
 </head>
 <body>

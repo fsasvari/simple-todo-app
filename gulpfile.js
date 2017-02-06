@@ -12,10 +12,10 @@ elixir.config.publicPath = 'public_html';
 elixir(function(mix) {
     // start sass
     mix.sass('style.scss', 'public_html/css/style.min.css')
-        .sass('partial.scss', 'resources/assets/css/partial.min.css');
+        .sass('partial.scss', 'app/View/Css/partial.min.css');
 
     // copy partial and process css as blade files for inlining critical css
-    mix.copy('resources/assets/css/partial.min.css', 'resources/views/css/partial.blade.php');
+    //mix.copy('resources/assets/css/partial.min.css', 'resources/views/css/partial.blade.php');
 
     // concat main scripts
     //mix.scriptsIn('resources/assets/js/concat', 'public_html/js/main.min.js');
@@ -40,7 +40,7 @@ elixir(function(mix) {
     mix
 		// css
 		.remove('public_html/css/style.min.css')
-        .remove('resources/assets/css/partial.min.css');
+        //.remove('resources/assets/css/partial.min.css');
 
 		// concated scripts
         //.remove('public_html/js/main.min.js')

@@ -4,11 +4,6 @@
 //
 //============================================================================================
 
-.wrapper-top {
-    background-color: $navigation-top-bg;
-    padding-top: 3px;
-}
-
 .wrapper-header {
     background-color: $brand-primary;
     padding-top: 15px;
@@ -17,44 +12,4 @@
 
 .header-logotip {
     float: left;
-}
-
-.header-user {
-    color: #fff;
-    float: right;
-
-    a {
-        color: $brand-secondary;
-    }
-
-    a.btn {
-        color: $brand-primary;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-	.card-user {
-		@include card-variant(#0B4F26, #0B4F26);
-
-		margin-bottom: 0;
-
-		.media-body {
-			max-width: 200px;
-		}
-	}
-}
-
-.wrapper-simple-header {
-    background-color: $brand-primary;
-    padding: 25px 0 10px;
-
-    .container {
-        max-width: $container-simple-max-width;
-    }
-}
-
-.wrapper-navigation {
-    background-color: $brand-secondary;
 }
